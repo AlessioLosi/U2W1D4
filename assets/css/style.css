@@ -1,6 +1,13 @@
 body
 {
 background-color:#666666;
+font-family: "Caveat", cursive;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+h2{
+    font-weight: 600;
 }
 .yellow{
     background: linear-gradient(185deg, #ffffaf, #646458);

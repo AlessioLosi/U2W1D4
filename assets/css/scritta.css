@@ -1,0 +1,30 @@
+div {
+    border: 2px solid rgb(0, 0, 0);
+    width:600px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+p{
+    width: 70%;
+}
+span{
+    font-weight: 700;
+    color: rgb(48, 76, 104);
+}
+.primafrase{
+    animation: change 10s linear 0s infinite;
+}
+
+@keyframes change{
+    0%{
+    transform: translate(-1000);
+    }
+    50%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(10000);
+    }
+}
+
