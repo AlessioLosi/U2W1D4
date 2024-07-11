@@ -12,19 +12,38 @@ span{
     font-weight: 700;
     color: rgb(48, 76, 104);
 }
-.primafrase{
-    animation: change 10s linear 0s infinite;
+.parole{
+    display: flex;
+    flex-direction: column;
+}
+.parole span:nth-child(1) {
+    animation-delay: 0s;
+    animation: scorrimento 5s ease-in 0s 1;
+    opacity: 0%;
 }
 
-@keyframes change{
-    0%{
-    transform: translate(-1000);
+.parole span:nth-child(2) {
+    opacity: 0%;
+    animation: scorrimento 5s ease-in 5s 1;
+
+}
+
+.parole span:nth-child(3) {
+    opacity: 0%;
+    animation: scorrimento 5s ease-in 10s 1;
+}
+
+@keyframes scorrimento {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0%;
     }
     50%{
-        transform: translate(0);
+        transform: translateY(0%);
+        opacity: 100%;
     }
-    100%{
-        transform: translate(10000);
+    100% {
+        transform: translateY(100%);
+        opacity: 0%;
     }
 }
-
