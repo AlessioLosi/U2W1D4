@@ -18,19 +18,19 @@ span{
 }
 .parole span:nth-child(1) {
     animation-delay: 0s;
-    animation: scorrimento 5s ease-in 0s 1;
+    animation: scorrimento 10s ease-in 0s infinite;
     opacity: 0%;
 }
 
 .parole span:nth-child(2) {
     opacity: 0%;
-    animation: scorrimento 5s ease-in 5s 1;
+    animation: scorrimento 10s ease-in 3s infinite;
 
 }
 
 .parole span:nth-child(3) {
     opacity: 0%;
-    animation: scorrimento 5s ease-in 10s 1;
+    animation: scorrimento 10s ease-in 6s infinite;
 }
 
 @keyframes scorrimento {
@@ -38,12 +38,16 @@ span{
         transform: translateY(-100%);
         opacity: 0%;
     }
-    50%{
+    16.5%{
         transform: translateY(0%);
         opacity: 100%;
     }
-    100% {
+    33%{ 
         transform: translateY(100%);
+        opacity:0%;
+    }
+    100% {
+       
         opacity: 0%;
     }
 }
