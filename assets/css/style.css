@@ -1,0 +1,39 @@
+body
+{
+background-color:#666666;
+}
+.yellow{
+    background: linear-gradient(185deg, #ffffaf, #646458);
+    transform: rotate(10deg);
+    transform: rotate3d(100deg);
+    text-align: center;
+}
+.green{
+    background: linear-gradient(185deg , rgb(141, 231, 141),rgb(95, 121, 95));
+    transform: rotate(-10deg);
+    text-align: center;
+}
+.purple {
+    background: linear-gradient(185deg,#c6c6ee ,#71727d);
+    transform: rotate(-5deg);
+    text-align: center;
+}
+.postit{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.green, .purple, .yellow{
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    box-shadow:0px 5px 2px -1px rgb(56, 56, 56) ;
+    transform:skew(19deg -19deg 5deg -5deg);
+
+}
+.green:hover, .yellow:hover, .purple:hover{
+    transform: scale(1.2);
+    box-shadow:3px 4px 2px 2px rgb(56, 56, 56) ;
+}
